@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jamal SOKOBA — Portfolio BTS SIO SLAM</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSEUR PERSONNALISÉ -->
+  <div class="cursor"></div>
+  <div class="cursor-trail"></div>
+
+  <!-- FOND ANIMÉ -->
+  <canvas id="grid-canvas"></canvas>
+
+  <!-- HEADER / NAV -->
+  <header id="header">
+    <div class="logo">
+      <span class="logo-bracket">[</span>
+      JS
+      <span class="logo-bracket">]</span>
+    </div>
+    <nav>
+      <a href="#accueil" class="nav-link" data-text="Accueil">Accueil</a>
+      <a href="#cv" class="nav-link" data-text="CV">CV</a>
+      <a href="#tp" class="nav-link" data-text="TP">TP</a>
+      <a href="#synthese" class="nav-link" data-text="Synthèse">Synthèse</a>
+      <a href="#veille" class="nav-link" data-text="Veille">Veille</a>
+      <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+    </nav>
+    <div class="nav-line"></div>
+  </header>
+
+  <!-- SECTION HERO -->
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <div class="hero-tag">&lt; Étudiant BTS SIO SLAM /&gt;</div>
+      <h1 class="hero-name">
+        <span class="name-first">Jamal</span>
+        <span class="name-last">SOKOBA</span>
+      </h1>
+      <div class="hero-subtitle">
+        <span class="typing-text" id="typing"></span><span class="cursor-blink">|</span>
+      </div>
+      <div class="hero-info">
+        <div class="info-chip"><span class="chip-icon">◈</span> 19 ans</div>
+        <div class="info-chip"><span class="chip-icon">◈</span> BTS SIO — Option SLAM</div>
+        <div class="info-chip"><span class="chip-icon">◈</span> Développement logiciel</div>
+      </div>
+      <div class="hero-cta">
+        <a href="#cv" class="btn-primary">Voir mon CV</a>
+        <a href="#contact" class="btn-secondary">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hex-container">
+        <div class="hex hex-1"></div>
+        <div class="hex hex-2"></div>
+        <div class="hex hex-3"></div>
+        <div class="hex-center">
+          <span>JS</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SECTION CV -->
+  <section id="cv" class="section">
+    <div class="section-header">
+      <div class="section-tag">// 01</div>
+      <h2 class="section-title">Curriculum <span class="neon-text">Vitae</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="cv-grid">
+      <!-- Colonne gauche -->
+      <div class="cv-left">
+        <div class="cv-card identity-card">
+          <div class="cv-avatar">JS</div>
+          <h3>Jamal SOKOBA</h3>
+          <p class="cv-title">Étudiant BTS SIO SLAM</p>
+          <div class="cv-badge">19 ans</div>
+        </div>
+
+        <div class="cv-card">
+          <h4 class="cv-card-title"><span class="neon-dot"></span> Compétences</h4>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">HTML / CSS</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">PHP</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SQL</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-card">
+          <h4 class="cv-card-title"><span class="neon-dot"></span> Langues</h4>
+          <div class="lang-item"><span>Français</span><span class="lang-level neon-text">Natif</span></div>
+          <div class="lang-item"><span>Anglais</span><span class="lang-level">Scolaire</span></div>
+        </div>
+      </div>
+
+      <!-- Colonne droite -->
+      <div class="cv-right">
+        <div class="cv-card">
+          <h4 class="cv-card-title"><span class="neon-dot"></span> Formation</h4>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-date">2023 — 2025</div>
+                <div class="timeline-title">BTS SIO — Option SLAM</div>
+                <div class="timeline-sub">Lycée / CFA — Île-de-France</div>
+                <p>Solutions Logicielles et Applications Métiers. Développement d'applications, bases de données, cybersécurité.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-date">2020 — 2023</div>
+                <div class="timeline-title">Baccalauréat Général</div>
+                <div class="timeline-sub">Option NSI (Numérique et Sciences Informatiques)</div>
+                <p>Obtenu avec mention. Initiation à la programmation et aux algorithmes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-card">
+          <h4 class="cv-card-title"><span class="neon-dot"></span> Expériences</h4>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-date">Stage — 2024</div>
+                <div class="timeline-title">Développeur Web Stagiaire</div>
+                <div class="timeline-sub">Entreprise — Île-de-France</div>
+                <p>Développement d'interfaces web, maintenance de bases de données, travail en équipe agile.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-card">
+          <h4 class="cv-card-title"><span class="neon-dot"></span> Centres d'intérêt</h4>
+          <div class="interests-grid">
+            <div class="interest-chip">⚡ Cybersécurité</div>
+            <div class="interest-chip">🎮 Gaming</div>
+            <div class="interest-chip">💻 Dev Open Source</div>
+            <div class="interest-chip">🎵 Musique</div>
+            <div class="interest-chip">📱 Tech Mobile</div>
+            <div class="interest-chip">🤖 IA & Machine Learning</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION TP -->
+  <section id="tp" class="section">
+    <div class="section-header">
+      <div class="section-tag">// 02</div>
+      <h2 class="section-title">Travaux <span class="neon-text">Pratiques</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="tp-filter">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="bdd">Base de données</button>
+      <button class="filter-btn" data-filter="reseau">Réseau</button>
+    </div>
+
+    <div class="tp-grid">
+      <div class="tp-card" data-cat="web">
+        <div class="tp-number">TP_01</div>
+        <div class="tp-icon">🌐</div>
+        <h3>Site Web Statique</h3>
+        <p>Création d'un site HTML/CSS responsive avec navigation multi-pages et intégration de médias.</p>
+        <div class="tp-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+        </div>
+        <a href="#" class="tp-link">Voir le TP <span>→</span></a>
+      </div>
+
+      <div class="tp-card" data-cat="bdd">
+        <div class="tp-number">TP_02</div>
+        <div class="tp-icon">🗄️</div>
+        <h3>Base de Données</h3>
+        <p>Modélisation MCD/MLD, création de tables SQL, requêtes complexes avec jointures et agrégats.</p>
+        <div class="tp-tags">
+          <span class="tag">SQL</span>
+          <span class="tag">MySQL</span>
+        </div>
+        <a href="#" class="tp-link">Voir le TP <span>→</span></a>
+      </div>
+
+      <div class="tp-card" data-cat="web">
+        <div class="tp-number">TP_03</div>
+        <div class="tp-icon">⚙️</div>
+        <h3>Application PHP/MySQL</h3>
+        <p>Application web dynamique avec authentification, CRUD complet et gestion des sessions.</p>
+        <div class="tp-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">AJAX</span>
+        </div>
+        <a href="#" class="tp-link">Voir le TP <span>→</span></a>
+      </div>
+
+      <div class="tp-card" data-cat="reseau">
+        <div class="tp-number">TP_04</div>
+        <div class="tp-icon">🔒</div>
+        <h3>Sécurité Réseau</h3>
+        <p>Configuration de pare-feu, analyse de trames réseau, identification de vulnérabilités.</p>
+        <div class="tp-tags">
+          <span class="tag">Wireshark</span>
+          <span class="tag">Linux</span>
+        </div>
+        <a href="#" class="tp-link">Voir le TP <span>→</span></a>
+      </div>
+
+      <div class="tp-card" data-cat="web">
+        <div class="tp-number">TP_05</div>
+        <div class="tp-icon">📱</div>
+        <h3>Application JavaScript</h3>
+        <p>Développement d'une application SPA en JavaScript vanilla avec API REST et manipulation du DOM.</p>
+        <div class="tp-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">API REST</span>
+        </div>
+        <a href="#" class="tp-link">Voir le TP <span>→</span></a>
+      </div>
+
+      <div class="tp-card" data-cat="bdd">
+        <div class="tp-number">TP_06</div>
+        <div class="tp-icon">🐍</div>
+        <h3>Script Python</h3>
+        <p>Automatisation de tâches, traitement de fichiers CSV, génération de rapports dynamiques.</p>
+        <div class="tp-tags">
+          <span class="tag">Python</span>
+          <span class="tag">CSV</span>
+        </div>
+        <a href="#" class="tp-link">Voir le TP <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION NOTE DE SYNTHÈSE -->
+  <section id="synthese" class="section">
+    <div class="section-header">
+      <div class="section-tag">// 03</div>
+      <h2 class="section-title">Note de <span class="neon-text">Synthèse</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="synthese-container">
+      <div class="synthese-intro">
+        <p>La note de synthèse est un exercice fondamental du BTS SIO permettant de résumer et structurer les informations d'un dossier technique complexe.</p>
+      </div>
+
+      <div class="synthese-cards">
+        <div class="synthese-card featured">
+          <div class="synthese-icon">📄</div>
+          <div class="synthese-label">Note de synthèse</div>
+          <h3>Analyse d'un Système d'Information</h3>
+          <p>Synthèse portant sur l'architecture et la sécurisation d'un SI en entreprise. Étude des risques, solutions proposées et recommandations techniques.</p>
+          <div class="synthese-meta">
+            <span>📅 2024</span>
+            <span>📃 8 pages</span>
+          </div>
+          <a href="#" class="btn-primary small">Télécharger le PDF</a>
+        </div>
+
+        <div class="synthese-card">
+          <div class="synthese-icon">📝</div>
+          <div class="synthese-label">Note de synthèse</div>
+          <h3>La Virtualisation en Entreprise</h3>
+          <p>Comparaison des solutions de virtualisation, analyse des coûts et bénéfices pour une PME.</p>
+          <div class="synthese-meta">
+            <span>📅 2023</span>
+            <span>📃 6 pages</span>
+          </div>
+          <a href="#" class="btn-secondary small">Télécharger le PDF</a>
+        </div>
+      </div>
+
+      <div class="synthese-process">
+        <h4>Ma méthode de travail</h4>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-num">01</div>
+            <div class="step-text">Lecture et analyse du dossier documentaire</div>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step">
+            <div class="step-num">02</div>
+            <div class="step-text">Identification des idées clés et structuration</div>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step">
+            <div class="step-num">03</div>
+            <div class="step-text">Rédaction claire, concise et argumentée</div>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step">
+            <div class="step-num">04</div>
+            <div class="step-text">Relecture et mise en forme professionnelle</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION VEILLE TECHNOLOGIQUE -->
+  <section id="veille" class="section">
+    <div class="section-header">
+      <div class="section-tag">// 04</div>
+      <h2 class="section-title">Veille <span class="neon-text">Technologique</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="veille-intro">
+      <p>Je réalise une veille régulière sur les évolutions du numérique afin de rester à jour sur les nouvelles technologies, les cybermenaces et les tendances du développement logiciel.</p>
+    </div>
+
+    <div class="veille-topics">
+      <div class="veille-topic-card active-card">
+        <div class="veille-topic-icon">🤖</div>
+        <h3>Intelligence Artificielle</h3>
+        <p>Suivi des avancées en IA générative, LLM, et leurs applications dans le développement logiciel (GitHub Copilot, ChatGPT, Gemini…).</p>
+        <div class="veille-sources">
+          <span class="source-chip">MIT Technology Review</span>
+          <span class="source-chip">Le Monde Informatique</span>
+        </div>
+      </div>
+
+      <div class="veille-topic-card">
+        <div class="veille-topic-icon">🔐</div>
+        <h3>Cybersécurité</h3>
+        <p>Monitoring des nouvelles failles (CVE), bonnes pratiques OWASP, évolutions réglementaires RGPD et NIS2.</p>
+        <div class="veille-sources">
+          <span class="source-chip">ANSSI</span>
+          <span class="source-chip">CERT-FR</span>
+          <span class="source-chip">Krebs on Security</span>
+        </div>
+      </div>
+
+      <div class="veille-topic-card">
+        <div class="veille-topic-icon">☁️</div>
+        <h3>Cloud & DevOps</h3>
+        <p>Évolutions des plateformes cloud (AWS, Azure, GCP), conteneurisation Docker/Kubernetes, CI/CD.</p>
+        <div class="veille-sources">
+          <span class="source-chip">AWS Blog</span>
+          <span class="source-chip">Dev.to</span>
+        </div>
+      </div>
+
+      <div class="veille-topic-card">
+        <div class="veille-topic-icon">📱</div>
+        <h3>Développement Mobile</h3>
+        <p>Tendances Flutter, React Native, évolutions Android/iOS, Progressive Web Apps.</p>
+        <div class="veille-sources">
+          <span class="source-chip">Android Developers</span>
+          <span class="source-chip">Flutter.dev</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="veille-tools">
+      <h4>Mes outils de veille</h4>
+      <div class="tools-grid">
+        <div class="tool-item"><span>📰</span> Feedly (agrégateur RSS)</div>
+        <div class="tool-item"><span>🐦</span> Twitter / X</div>
+        <div class="tool-item"><span>💼</span> LinkedIn</div>
+        <div class="tool-item"><span>👨‍💻</span> GitHub Trending</div>
+        <div class="tool-item"><span>📺</span> YouTube Tech</div>
+        <div class="tool-item"><span>💬</span> Reddit r/programming</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <div class="section-tag">// 05</div>
+      <h2 class="section-title">Me <span class="neon-text">Contacter</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-container">
+      <!-- Coordonnées -->
+      <div class="contact-info">
+        <h3 class="contact-sub">Mes coordonnées</h3>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">✉</div>
+            <div class="contact-detail">
+              <span class="contact-label">Email</span>
+              <a href="mailto:jamal.sokoba.pro@gmail.com" class="contact-value">jamal.sokoba.pro@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-detail">
+              <span class="contact-label">Localisation</span>
+              <span class="contact-value">Île-de-France, France</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🎓</div>
+            <div class="contact-detail">
+              <span class="contact-label">Formation</span>
+              <span class="contact-value">BTS SIO — Option SLAM</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div class="contact-detail">
+              <span class="contact-label">Disponibilité</span>
+              <span class="contact-value neon-text">Ouvert aux opportunités</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-btn">GitHub</a>
+          <a href="#" class="social-btn">LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- Formulaire de contact -->
+      <div class="contact-form-wrapper">
+        <h3 class="contact-sub">M'écrire directement</h3>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom..." required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" name="subject" placeholder="Objet de votre message..." required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width" id="submitBtn">
+            <span>Envoyer le message</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <div class="form-note">
+            Ou envoyez directement à : <a href="mailto:jamal.sokoba.pro@gmail.com">jamal.sokoba.pro@gmail.com</a>
+          </div>
+          <div id="formSuccess" class="form-success" style="display:none;">
+            ✅ Message envoyé avec succès ! Je vous répondrai rapidement.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span> Jamal SOKOBA <span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-sub">BTS SIO SLAM — Portfolio 2024–2025</p>
+      <p class="footer-copy">Conçu & développé par Jamal SOKOBA</p>
+    </div>
+  </footer>
+
+  <script>
+    // ---- CURSEUR PERSONNALISÉ ----
+    const cursor = document.querySelector('.cursor');
+    const trail = document.querySelector('.cursor-trail');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      setTimeout(() => {
+        trail.style.left = e.clientX + 'px';
+        trail.style.top = e.clientY + 'px';
+      }, 80);
+    });
+    document.querySelectorAll('a, button, .tp-card, .cv-card').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
+
+    // ---- GRILLE CANVAS FOND ----
+    const canvas = document.getElementById('grid-canvas');
+    const ctx = canvas.getContext('2d');
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    function drawGrid() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.strokeStyle = 'rgba(0, 255, 180, 0.04)';
+      ctx.lineWidth = 1;
+      const spacing = 50;
+      for (let x = 0; x < canvas.width; x += spacing) {
+        ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+      }
+      for (let y = 0; y < canvas.height; y += spacing) {
+        ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+      }
+    }
+    drawGrid();
+
+    // ---- TYPING EFFECT ----
+    const phrases = ['Développeur Web', 'Étudiant BTS SIO SLAM', 'Passionné de code', 'Curieux & Créatif'];
+    let phraseIndex = 0, charIndex = 0, deleting = false;
+    const typingEl = document.getElementById('typing');
+    function type() {
+      const current = phrases[phraseIndex];
+      if (!deleting) {
+        typingEl.textContent = current.substring(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === current.length) { deleting = true; setTimeout(type, 1800); return; }
+      } else {
+        typingEl.textContent = current.substring(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) { deleting = false; phraseIndex = (phraseIndex + 1) % phrases.length; }
+      }
+      setTimeout(type, deleting ? 60 : 100);
+    }
+    type();
+
+    // ---- FILTRES TP ----
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.tp-card').forEach(card => {
+          if (filter === 'all' || card.dataset.cat === filter) {
+            card.style.display = 'flex';
+            card.style.animation = 'fadeInUp 0.4s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // ---- SCROLL HEADER ----
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ---- INTERSECTION OBSERVER ----
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.section, .tp-card, .cv-card, .veille-topic-card, .synthese-card').forEach(el => observer.observe(el));
+
+    // ---- NAV ACTIVE ----
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id'); });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+      });
+    });
+
+    // ---- FORMULAIRE ----
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.innerHTML = '<span>Envoi en cours...</span>';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('formSuccess').style.display = 'block';
+        btn.innerHTML = '<span>Envoyer le message</span><span class="btn-icon">→</span>';
+        btn.disabled = false;
+        this.reset();
+        setTimeout(() => document.getElementById('formSuccess').style.display = 'none', 4000);
+      }, 1500);
+    });
+
+    // ---- SKILL BARS ANIMATION ----
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.skill-fill').forEach(bar => {
+            bar.style.width = bar.style.width;
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('#cv').forEach(el => skillObserver.observe(el));
+  </script>
+</body>
+</html>
